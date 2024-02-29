@@ -1,0 +1,195 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.header{
+    padding: 20px 0;
+}
+
+.container-header {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+img.logo{
+    width: 10%;
+}
+
+ul {
+    display: flex;
+    position: relative;
+    gap: 50px;
+    list-style-type: none;
+}
+
+li a{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.button-header{
+    background-color: #508901;
+    border: none;
+    padding: 14px 13px;
+    color: white;
+    border-radius: 40px;
+    /*box-shadow: 2px 2px 4px 2px #508901;*/
+}
+
+.banner{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.banner img{
+    width: 100%;
+}
+
+.banner-conteudo {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+}
+
+.banner .divisor{
+    width: 30%;
+    position: absolute;
+    top: 55%;
+}
+
+.sobre{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin: 120px 0;
+}
+
+
+.sobre-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.sobre-img img{
+    width:40%;
+    border: 10px solid #508901;
+    border-radius: 50%;
+
+}
+
+.sobre-conteudo{
+    width: 35%;
+    margin-right: 50px;
+}
+
+.sobre-conteudo h2{
+    font-size: 40px;
+    font-weight: normal;
+    padding-bottom: 15px;
+}
+
+.sobre-topicos{
+    position: relative;
+    padding: 20px 0;
+}
+
+.sobre-topicos p{
+    position: relative;
+    left: 5%;
+    top: -30px;
+    width: 50%;
+}
+
+.sessao{
+    background-color: #F3F1F1 ;
+    position: relative;
+}
+
+.sessao img.frutas{
+    width: 100%;
+}
+
+.divisor-2{
+    position: absolute;
+    top: -40%;
+    left: 80%;
+    width: 20%;
+}
+
+.sessao-conteudo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0;
+}
+
+
+.principios{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin: 64px 0;
+}
+
+.principios-intro{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    gap: 50px;
+}
+
+.principios-intro p{
+    width: 45%;
+}
+
+.principios-intro p:before{
+    position: absolute;
+    top:13%;
+    content: "";
+    height: 2px;
+    width: 25%;
+    background: #508901;
+}
+
+.principios-topicos{
+    width: 50%;
+    position: relative;
+    height: auto;
+}
+
+.principios-topicos h1{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.principios-icones h4{
+    position: absolute;
+    left: 10%;
+    top: 4%;
+}
+
+.principios-icones p{
+    position: absolute;
+    left: 10%;
+    top: 8%;
+}
+
+.ic {
+    width: 8%;
+    height: 12%;
+    border-radius: 50%;
+    background: red;
+}
