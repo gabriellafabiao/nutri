@@ -46,6 +46,7 @@ li a{
     display: flex;
     flex-direction: column;
     position: relative;
+    justify-content: center;
 }
 
 .banner img{
@@ -56,8 +57,13 @@ li a{
     position: absolute;
     display: flex;
     flex-direction: column;
+    margin-left:100px
 }
 
+.banner-conteudo h1 {
+    font-size: 40px;
+    color: white;
+}
 .banner .divisor{
     width: 30%;
     position: absolute;
@@ -112,6 +118,7 @@ li a{
 .sessao{
     background-color: #F3F1F1 ;
     position: relative;
+    height: 850px;
 }
 
 .sessao img.frutas{
@@ -120,7 +127,7 @@ li a{
 
 .divisor-2{
     position: absolute;
-    top: -40%;
+    top: -20%;
     left: 80%;
     width: 20%;
 }
@@ -130,29 +137,42 @@ li a{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 30px 0;
+    margin: 80px 0;
 }
 
+.sessao-conteudo h1{
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.fundo{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin:20px 0;
+    width: 60%; 
+    height: 50px;
+    background-color: #d9d9d9; 
+}
 
 .principios{
     display: flex;
     justify-content: center;
     position: relative;
-    margin: 64px 0;
+    margin: 60px 200px;
 }
 
 .principios-intro{
     width: 50%;
+    gap: 50px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    gap: 50px;
+    align-items: flex-start;
 }
 
 .principios-intro p{
-    width: 45%;
+    width: 60%;
 }
 
 .principios-intro p:before{
@@ -175,21 +195,147 @@ li a{
     font-weight: bold;
 }
 
-.principios-icones h4{
-    position: absolute;
-    left: 10%;
-    top: 4%;
+.principios-icones{
+    display: flex;
+    margin: 40px 0;
+    gap:42px;
+    align-items: center;
 }
 
-.principios-icones p{
-    position: absolute;
-    left: 10%;
-    top: 8%;
+.principios-texto{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
-.ic {
-    width: 8%;
-    height: 12%;
+.principios-icones .ic:before{
+    position: absolute;
+    margin: 0px 66px;
+    margin-top:107px;
+    content: "";
+    height: 80px;
+    width: 2px;
+    background: #508901;
+}
+
+.beneficios{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.beneficios img{
+    width: 100%;
+}
+
+.beneficios-conteudo {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+}
+
+.beneficios-conteudo p, 
+.beneficios-conteudo h1{
+    color: white;
+    width: 35%;
+}
+
+.beneficios-conteudo h1{
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.depoimentos{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-around;
+}
+.depoimentos img{
+    max-width: 100%;
+}
+
+.depoimentos-conteudos{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-right: 180px;
+}
+
+.depoimentos-conteudos h1{
+    font-size: 40px;
+    font-weight: normal;
+    margin-bottom: 100px;
+}
+
+.depoimentos-conteudos h1:before{
+    position: absolute;
+    top: 12%;
+    right: 73px;
+    content: "";
+    height: 2px;
+    width: 25%;
+    background: #508901;
+}
+
+.depoimentos-slide {
+    display: flex;
+  }
+  
+  .depoimentos-slide img {
+    width: 100%;
+    display: none;
+  }
+  
+  .depoimentos-conteudos button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    color: black;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+    margin: -30px;
+    top: 80%;
+  }
+  
+  .prev {
+    left: 0;
+  }
+  
+  .next {
+    right: 0;
+  }
+  
+.dots-container {
+    text-align: center;
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+  }
+  
+  .dot {
+    height: 10px;
+    width: 10px;
+    margin: 0 5px;
+    background-color: white;
     border-radius: 50%;
-    background: red;
-}
+    display: inline-block;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .dot.active {
+    background-color: #508901;
+  }
+
